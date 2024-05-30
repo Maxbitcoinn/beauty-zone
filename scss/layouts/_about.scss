@@ -47,6 +47,7 @@
         width: 50%;
         gap: 40px;
         border-radius: 50%;
+        position: relative;
         
     }
 
@@ -63,8 +64,8 @@
 
     &__img-2 {
         border-radius: 50%;
-        // max-width: 100%; /* Установлено максимальное значение ширины для адаптивности */
-        // height: auto; /* Установлено автоматическое значение высоты для адаптивности */
+        max-width: 100%; /* Установлено максимальное значение ширины для адаптивности */
+        height: auto; /* Установлено автоматическое значение высоты для адаптивности */
         align-self: flex-end;
         width: 343px;
         height: 328px; 
@@ -75,10 +76,22 @@
 
 
 
-    &__about__text-1,
-    &__about__text-2 {
+    &__about__text-1
+    {
     width: 100%; /* Установлено значение ширины 100% для адаптивности */
 }
+
+    &__about__text-2
+    {
+width: 709px;
+
+    }
+    &__text-2-capitilize{
+        font-weight: 600;
+        text-transform: capitalize;
+
+    }
+
     
 &__content::after {
 	position: absolute;
@@ -92,4 +105,35 @@
 	animation-duration: 24s;
 	animation-iteration-count: infinite;
 }
+
+
+
+
+
+&__images::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/blueStar-icon.svg');
+    top: 14px;
+    right: 9px;
+    animation-name: rotateLeft;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+
+&__images::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/grayStar-icon.svg');
+    top: 252px;
+    right: 39px;
+    animation-name: rotateLeft;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+
 }
