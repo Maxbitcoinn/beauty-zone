@@ -1,0 +1,95 @@
+.about{
+    // display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+
+
+    &___container{
+        display: flex;
+        flex-direction: row; /* Горизонтальное выравнивание */
+        justify-content: space-between; /* Распределение пространства между элементами */
+        align-items: center; /* Выравнивание элементов по вертикали */
+        width: 100%; /* Ширина 100% для контейнера */
+        position: relative;
+    }
+
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        gap: 40px; 
+        position: relative;
+         
+    }
+    &__texts{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 50%;
+        // margin-left: 28px;
+        position: relative;
+    }
+
+    &__title{
+        font-family: Play;
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 0;
+        width: 509px;
+    }
+    &__title-capitalize{
+        text-transform: capitalize;
+    }
+
+
+    &__images{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 40px;
+        border-radius: 50%;
+        
+    }
+
+    &__img-1 {
+        border-radius: 50%;
+        // max-width: 100%; /* Установлено максимальное значение ширины для адаптивности */
+        // height: auto; /* Установлено автоматическое значение высоты для адаптивности */
+        align-self: flex-start;
+        width: 335px;
+        height: 328px;
+        
+       
+    }
+
+    &__img-2 {
+        border-radius: 50%;
+        // max-width: 100%; /* Установлено максимальное значение ширины для адаптивности */
+        // height: auto; /* Установлено автоматическое значение высоты для адаптивности */
+        align-self: flex-end;
+        width: 343px;
+        height: 328px; 
+    }
+  
+    
+
+
+
+
+    &__about__text-1,
+    &__about__text-2 {
+    width: 100%; /* Установлено значение ширины 100% для адаптивности */
+}
+    
+&__content::after {
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/purpleStar-icon.svg');
+    top: 366px;
+    right: 342px;
+	animation-name: rotateLeft;
+	animation-duration: 24s;
+	animation-iteration-count: infinite;
+}
+}
