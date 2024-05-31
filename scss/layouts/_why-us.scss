@@ -1,0 +1,54 @@
+.why-us {
+    margin-bottom: 96px;
+    padding-top: 160px;
+	background-image: url('../images/whywe-bg.png');
+	
+   
+
+
+    &__title {
+        font-family: Play, sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        text-align: center;
+    }   
+	
+&__items {
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+&__item {
+    display: flex;
+    flex-direction: column;
+    height: 181px;
+    padding: 24px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background: var(--white-color);
+    box-shadow: 0px 3px 5px 0px rgba(168, 198, 245, 0.38);
+    }    
+    
+    &__item-text {
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 24px;
+        width: 252px;
+    }
+
+    &__item-icon {
+        fill: var(--brand-color-blue);
+        margin-bottom: 8px;
+        flex-shrink: 0;
+    }
+ 
+
+
+
+
+}

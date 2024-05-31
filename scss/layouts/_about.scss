@@ -1,5 +1,4 @@
 .about{
-    // display: flex;
     margin-bottom: 0;
     justify-content: center;
 
@@ -25,12 +24,11 @@
         flex-direction: column;
         gap: 40px;
         width: 50%;
-        // margin-left: 28px;
         position: relative;
     }
 
     &__title{
-        font-family: Play;
+        font-family: Play, sans-serif;
         font-size: 64px;
         font-weight: 700;
         margin-bottom: 0;
@@ -83,7 +81,7 @@
 
     &__about__text-2
     {
-width: 709px;
+        width: 709px;
 
     }
     &__text-2-capitilize{
@@ -131,8 +129,8 @@ width: 709px;
     background-image: url('../images/grayStar-icon.svg');
     top: 252px;
     right: 39px;
-    animation-name: rotateLeft;
-    animation-duration: 24s;
+    animation-name: scale;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 

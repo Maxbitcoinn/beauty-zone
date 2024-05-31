@@ -11,6 +11,8 @@
   @import './utils/brand';
   @import './components/link';
   @import './layouts/about';
+  @import './layouts/why-us';
+  @import './layouts/procedures';
 
 
 
@@ -23,7 +25,23 @@
         transform: rotate(-360deg);
     }
 }
-
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.5);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
 
  
 
