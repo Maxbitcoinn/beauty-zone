@@ -1,0 +1,23 @@
+.carousel-button {
+
+
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid var(--black-color);
+        fill: var(--black-color);
+        cursor: pointer;
+}
+
+    .carousel-button:hover{
+        background: var(--brand-color-blue);
+        border: 1px solid var(--white-color);
+        fill: var(--white-color);
+    }
+
+   

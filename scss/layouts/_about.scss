@@ -1,14 +1,17 @@
 .about{
     margin-bottom: 0;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    
 
 
     &___container{
         display: flex;
-        flex-direction: row; /* Горизонтальное выравнивание */
-        justify-content: space-between; /* Распределение пространства между элементами */
-        align-items: center; /* Выравнивание элементов по вертикали */
-        width: 100%; /* Ширина 100% для контейнера */
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%;
         position: relative;
     }
 
@@ -38,15 +41,13 @@
         text-transform: capitalize;
     }
 
-
     &__images{
         display: flex;
         flex-direction: column;
         width: 50%;
         gap: 40px;
         border-radius: 50%;
-        position: relative;
-        
+        position: relative;    
     }
 
     &__img-1 {
@@ -56,8 +57,6 @@
         align-self: flex-start;
         width: 335px;
         height: 328px;
-        
-       
     }
 
     &__img-2 {
@@ -69,11 +68,6 @@
         height: 328px; 
     }
   
-    
-
-
-
-
     &__about__text-1
     {
     width: 100%; /* Установлено значение ширины 100% для адаптивности */
@@ -82,8 +76,8 @@
     &__about__text-2
     {
         width: 709px;
-
     }
+
     &__text-2-capitilize{
         font-weight: 600;
         text-transform: capitalize;

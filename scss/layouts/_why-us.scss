@@ -1,11 +1,7 @@
 .why-us {
-    margin-bottom: 96px;
-    padding-top: 160px;
-	background-image: url('../images/whywe-bg.png');
-	
+    position: relative;
+    margin-bottom: 96PX;
    
-
-
     &__title {
         font-family: Play, sans-serif;
         font-size: 64px;
@@ -13,15 +9,14 @@
         text-align: center;
     }   
 	
-&__items {
+    &__items {
     display: flex;
     gap: 56px;
     justify-content: center;
     align-items: center;
-    
     }
     
-&__item {
+    &__item {
     display: flex;
     flex-direction: column;
     height: 181px;
@@ -35,7 +30,7 @@
     
     &__item-text {
         text-align: center;
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         font-size: 18px;
         line-height: 24px;
         width: 252px;
@@ -46,9 +41,5 @@
         margin-bottom: 8px;
         flex-shrink: 0;
     }
- 
-
-
-
 
 }
