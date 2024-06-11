@@ -1,8 +1,6 @@
 .contacts {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    display: flex;
+    
 
 
     &__title{
@@ -18,17 +16,34 @@
     &__container{
         display: flex;
         gap: 32px;
+        justify-content: center;
     }
 
     &__map {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         width: 605px;
         height: 481px;
         border-radius: 32px;
         
     }
 
+    &__info {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 32px;
+        
+    }
+
+    &__modal {
+        display: flex;
+        width: 423px;
+        height: 481px;
+        flex-shrink: 0;
+        border: 1px solid #000000;
+        border-radius: 32px;
+        align-items: center;
+    }
 
 
   }
