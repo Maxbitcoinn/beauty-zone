@@ -1,0 +1,107 @@
+.footer {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: var(--primary-color-dark);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--white-color);
+    
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 186px;
+        margin: 0 auto;
+        padding: 56px 0 56px 0;
+    }
+
+    &__nav {
+        display: flex;
+        
+    }
+
+    &__logo {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        
+    }
+
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__address-link {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        width: 203px;
+    }
+
+    &__social {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__social-icon {
+        display: flex;
+        fill: var(--white-color);
+        transition: transform .2s, stroke .2s, fill .2s;
+    }
+    
+    &__social-icon:hover {
+        transform: scale(1.2);
+        fill: var(--white-color);
+        stroke: var(--white-color);
+    }
+
+
+    &__address-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        
+    }
+
+
+    &__address-copyright {
+       
+       
+    }
+
+    &__address-list,
+    &__address-info {
+    flex-grow: 1;
+}
+    &__address-link-2 {
+        
+    text-decoration: none;
+    padding-bottom: 0px;
+}
+    &__address-link:hover {
+    color: var(--white-color);
+}
+}
+
+
