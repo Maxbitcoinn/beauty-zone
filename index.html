@@ -55,7 +55,7 @@
                     <div class="hero__content">
                         <p class="hero__text">Косметологічна клініка</p>
                         <h1 class="hero__title">Beauty <br> Zone</h1>
-                            <button class="button  hero__button" type="button">Замовити дзвінок</button>
+                            <button class="button  hero__button modal-btn-open" type="button">Замовити дзвінок</button>
                             <p class="hero__description">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
                     
                     </div>
@@ -179,51 +179,48 @@
         <!-- <section class="section"> -->
             <div class="container">
                 <div class="footer__container">
-                        <a class="footer__logo" href="index.html">
-                            <img src="./images/logo.svg" width="74" height="42" alt="Логотип">
-                        </a>
-                        <ul class="footer__menu">
-                            <li><a class="footer__menu-item" href="#about">Про нас</a></li>
-                            <li><a class="footer__menu-item" href="#why-us">Чому ми</a></li>
-                            <li><a class="footer__menu-item" href="#procedures">Наші процедури</a></li>
-                            <li><a class="footer__menu-item" href="#contacts">Контакти</a></li>
-                        </ul>
-
-                        <div class="footer__address">
-                            <div>
-                                <ul class="footer__address-list">
-                                    <li><a class="footer__address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                                    <li><a class="footer__address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-                                    <li><a class="footer__address-link" href="https://maps.app.goo.gl/Rq1a8uEcZALW1TyF7" target="_blank">Україна, м. Київ,
-                                        вул. Січових Стрільців
-                                        54</a></li>
-                                  </ul>
-                            </div>
-                            <div class="footer__social">
-                                <a class="footer__social-link" href="#">
-                                    <svg class="footer__social-icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-phone"></use>
-                                    </svg>
-                                </a>
-                                <a class="footer__social-link" href="#">
-                                    <svg class="footer__social-icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                                <a class="footer__social-link" href="#">
-                                    <svg class="footer__social-icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                    <a class="footer__logo" href="index.html">
+                        <img src="./images/logo.svg" width="74" height="42" alt="Логотип">
+                    </a>
+                    <ul class="footer__menu">
+                        <li><a class="footer__menu-item link" href="#about">Про нас</a></li>
+                        <li><a class="footer__menu-item link" href="#why-us">Чому ми</a></li>
+                        <li><a class="footer__menu-item link" href="#procedures">Наші процедури</a></li>
+                        <li><a class="footer__menu-item link" href="#contacts">Контакти</a></li>
+                    </ul>
+                    <div class="footer__address">
+                        <div>
+                            <ul class="footer__address-list">
+                                <li><a class="footer__address-link link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                                <li><a class="footer__address-link link" href="mailto:shopbakery@gmail.com">beautyshop@gmail.com</a></li>
+                                <li><a class="footer__address-link link" href="https://maps.app.goo.gl/Rq1a8uEcZALW1TyF7" target="_blank">Україна, м. Київ, вул. Дмитра Луценка, 10</a></li>
+                            </ul>
                         </div>
-                        <div class="footer__address-info">
-                            <a class="footer__address-link-2" href="#" target="_blank">Політика конфіденційності</a>
-                            <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
-                          </div>
+                        <div class="footer__social">
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer__social-icon" width="42" height="42">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer__social-icon" width="42" height="42">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer__social-icon" width="42" height="42">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </div>
-                        
+                    </div>
+                    <div class="footer__address-info">
+                        <a class="footer__address-link-2 link" href="#" target="_blank">Політика конфіденційності</a>
+                        <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
+                    </div>
+                </div>
             </div>
+            
 
         <!-- </section> -->
        
@@ -231,5 +228,13 @@
 
 
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal__btn-close" type="button"></button>
+
+        </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

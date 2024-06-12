@@ -1,32 +1,28 @@
 .footer {
     display: flex;
     position: relative;
-    // width: auto;
-    // height: auto;
     background-color: var(--primary-color-dark);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    background-image: url('/images/footer-bg.png');
     color: var(--white-color);
-    width: 1440px;
-    height: 278px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 56px 0;
     margin: 0 auto;
-    
+    overflow: hidden; /* щоб уникнути горизонтальної прокрутки */
+
 
     &__container {
         display: flex;
         align-items: flex-start;
         gap: 186px;
         margin: 0 auto;
-        padding: 56px 0 56px 0;
+        padding: 0 16px; /* Додаємо внутрішні відступи для зручності */
     }
 
     &__nav {
         display: flex;
-        
+        color: beige;
     }
 
     &__logo {
@@ -40,9 +36,11 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        
     }
 
+    &__menu-item {
+        color: var(--white-color); /* Колір тексту в меню */
+    }
 
     &__address {
         display: flex;
@@ -54,6 +52,7 @@
         flex-direction: column;
         padding-bottom: 16px;
         width: 203px;
+        color: var(--white-color);
     }
 
     &__social {
@@ -73,58 +72,48 @@
         fill: var(--white-color);
         transition: transform .2s, stroke .2s, fill .2s;
     }
-    
+
     &__social-icon:hover {
         transform: scale(1.2);
         fill: var(--white-color);
-        stroke: var(--white-color);
+        stroke: var(--brand-color-blue);
     }
-
 
     &__address-info {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        
+        position: relative; /* Додаємо відносне позиціонування */
     }
 
+    &__address-info::after {
+        content: '';
+        position: absolute;
+        bottom: -156px; /* Розташування під елементом */
+        left: 0;
+        width: 218px;
+        height: 161px;
+        background-image: url('/images/footer-img.png');
+        background-size: cover; /* Адаптивне розміщення зображення */
+        background-position: center; /* Центрування зображення */
+    }
 
     &__address-copyright {
         color: #747272;
-       
+        font-family: Roboto;
+        font-size: 13px;
     }
 
-    &__address-list,
-    &__address-info {
-    flex-grow: 1;
-}
     &__address-link-2 {
-        
-    text-decoration: none;
-    padding-bottom: 0px;
-}
+        text-decoration: none;
+        padding-bottom: 0px;
+        color: var(--white-color);
+    }
+
+    &__menu-item:hover,
+    &__address-link-2:hover,
     &__address-link:hover {
-    color: var(--white-color);
-}
-
-
-&::before, 
-&::after{
-    position: absolute;
-    bottom: 0;
-    background-repeat: no-repeat;
-    content: '';
-    
-}
-
-&::before {
-    width: 278px;
-    height: 156px;
-    flex-shrink: 0;
-    right: 0;
-    background-image: url('/images/footer-img.png');
-
-}
-
+        color: var(--brand-color-blue);
+    }
 }
